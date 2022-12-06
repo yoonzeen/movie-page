@@ -5,7 +5,7 @@ export default function Nav() {
         <nav>
             <Link href="/">HOME</Link>
             <Link href="/about">ABOUT</Link>
-            <Link href="/todo">TODO</Link>
+            <Link href="/movies">MOVIES</Link>
             <Link href="/works">WORKS</Link>
         </nav>
     );
