@@ -1,5 +1,5 @@
 import axios, { AxiosError, AxiosResponse } from 'axios';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { MOVIE_KEY, TARGET_DT } from '../../public/data/variables';
 
 export default function movies() {
@@ -12,7 +12,9 @@ export default function movies() {
                 console.log(dailyBoxOfficeList)
             }).catch((error: AxiosError) => console.log(error));
     }
-    getMovies();
+    useEffect(() => {
+        getMovies();
+    }, []);
     return (
         <div>    
             <ul>
